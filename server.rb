@@ -6,6 +6,10 @@ require_relative "friends"
 
 
 get "/" do
+  createFriend
+  @first = @friends[0]
+  @second = @friends[1]
+  @third = @friends[2]
   @theName = Faker::Name.name
   @theCompany = Faker::Company.bs
   @theID = Faker::IDNumber.valid

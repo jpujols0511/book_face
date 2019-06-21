@@ -7,6 +7,9 @@ require_relative "friends"
 
 get "/" do
   createFriend
+  @randomPic = rand(98)
+  @randomPic2 = rand(98)
+  @randomPic3 = rand(99)
   @first = @friends[0]
   @second = @friends[1]
   @third = @friends[2]

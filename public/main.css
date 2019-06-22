@@ -7,3 +7,12 @@ h1{
 .test{
   font-size: 5rem;
 }
+
+.friends-grid{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-header{
+  padding: 1rem;
+}

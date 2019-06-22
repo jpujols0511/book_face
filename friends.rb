@@ -15,20 +15,27 @@ class Friends
 
 end
 
-def createFriend
-  @friends = []
+def createFriendName
+
   @firstFriend = Friends.new(Faker::Name.male_first_name, Faker::Name.last_name, Faker::IDNumber.valid, Faker::Color.color_name,Faker::Nation.nationality, Faker::GreekPhilosophers.quote)
   @secondFriend = Friends.new(Faker::Name.female_first_name, Faker::Name.last_name, Faker::IDNumber.valid, Faker::Color.color_name,Faker::Nation.nationality, Faker::GreekPhilosophers.quote)
   @thirdFriend = Friends.new(Faker::Name.male_first_name, Faker::Name.last_name, Faker::IDNumber.valid, Faker::Color.color_name,Faker::Nation.nationality, Faker::GreekPhilosophers.quote)
   @fourthFriend = Friends.new(Faker::Name.female_first_name, Faker::Name.last_name, Faker::IDNumber.valid, Faker::Color.color_name,Faker::Nation.nationality, Faker::GreekPhilosophers.quote)
   @fifthFriend = Friends.new(Faker::Name.male_first_name, Faker::Name.last_name, Faker::IDNumber.valid, Faker::Color.color_name,Faker::Nation.nationality, Faker::GreekPhilosophers.quote)
   @sixthFriend = Friends.new(Faker::Name.female_first_name, Faker::Name.last_name, Faker::IDNumber.valid, Faker::Color.color_name,Faker::Nation.nationality, Faker::GreekPhilosophers.quote)
-  @friends.push(@firstFriend.name)
-  @friends.push(@secondFriend.name)
-  @friends.push(@thirdFriend.name)
-  @friends.push(@fourthFriend.name)
-  @friends.push(@fifthFriend.name)
-  @friends.push(@sixthFriend.name)
+  @first = @firstFriend.name
+  @second = @secondFriend.name
+  @third = @thirdFriend.name
+  @four  = @fourthFriend.name
+  @fifth = @fifthFriend.name
+  @six = @sixthFriend.name
 
   return @friends
+end
+
+def  randomPicture
+  @randomPic = rand(98)
+  @randomPic2 = rand(98)
+  @randomPic3 = rand(99)
+  return
 end
